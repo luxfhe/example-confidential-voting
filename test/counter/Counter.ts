@@ -11,7 +11,7 @@ describe("Unit tests", function () {
   before(async function () {
     this.signers = {} as Signers;
 
-    // get tokens from faucet if we're on localfhenix and don't have a balance
+    // get tokens from faucet if we're on localluxfhe and don't have a balance
     await getTokensFromFaucet();
 
     // deploy test contract

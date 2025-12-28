@@ -10,7 +10,7 @@ dependencies:
     version: 6.12.2
 
 devDependencies:
-  '@fhenixprotocol/contracts':
+  '@luxfheprotocol/contracts':
     specifier: 0.1.0-beta.2
     version: 0.1.0-beta.2
   '@nomicfoundation/hardhat-chai-matchers':
@@ -79,9 +79,9 @@ devDependencies:
   ethers:
     specifier: ^6.4.0
     version: 6.4.0
-  fhenixjs:
-    specifier: link:../fhenix.js
-    version: link:../fhenix.js
+  luxfhejs:
+    specifier: link:../luxfhe.js
+    version: link:../luxfhe.js
   fs-extra:
     specifier: ^10.1.0
     version: 10.1.0
@@ -739,7 +739,7 @@ packages:
     engines: {node: '>=14'}
     dev: true
 
-  /@fhenixprotocol/contracts@0.1.0-beta.2:
+  /@luxfheprotocol/contracts@0.1.0-beta.2:
     resolution: {integrity: sha512-ZTYvJV1JedQjeNfWp5e80Rk9ShKrPqfmVzequYpCMEG7F/vT2o7dtcKHH4IVil92YnA/J2r35pJ/4clV7ufE2Q==}
     dependencies:
       '@openzeppelin/contracts': 5.0.1

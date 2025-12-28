@@ -2,9 +2,9 @@
 
 pragma solidity >=0.8.19 <0.9.0;
 
-// import "@fhenixprotocol/contracts/FHE.sol";
+// import "@luxfhe/contracts/FHE.sol";
 import "./FHE.sol";
-import "@fhenixprotocol/contracts/access/Permission.sol";
+import "@luxfhe/contracts/access/Permission.sol";
 
 contract Voting is Permissioned {
     uint8 internal constant MAX_OPTIONS = 4;

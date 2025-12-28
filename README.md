@@ -1,9 +1,9 @@
 # Hardhat Template [![Open in Gitpod][gitpod-badge]][gitpod] [![Github Actions][gha-badge]][gha] [![Hardhat][hardhat-badge]][hardhat] [![License: MIT][license-badge]][license]
 
-[gitpod]: https://gitpod.io/#https://github.com/fhenixprotocol/hardhat-template
+[gitpod]: https://gitpod.io/#https://github.com/luxfheprotocol/hardhat-template
 [gitpod-badge]: https://img.shields.io/badge/Gitpod-Open%20in%20Gitpod-FFB45B?logo=gitpod
-[gha]: https://github.com/fhenixprotocol/hardhat-template/actions
-[gha-badge]: https://github.com/fhenixprotocol/hardhat-template/actions/workflows/ci.yml/badge.svg
+[gha]: https://github.com/luxfheprotocol/hardhat-template/actions
+[gha-badge]: https://github.com/luxfheprotocol/hardhat-template/actions/workflows/ci.yml/badge.svg
 [hardhat]: https://hardhat.org/
 [hardhat-badge]: https://img.shields.io/badge/Built%20with-Hardhat-FFDB1C.svg
 [license]: https://opensource.org/licenses/MIT
@@ -20,7 +20,7 @@ A Hardhat-based template for developing Solidity smart contracts, with sensible 
 
 ## Getting Started
 
-Click the [`Use this template`](https://github.com/fhenixprotocol/hardhat-template/generate) button at the top of the
+Click the [`Use this template`](https://github.com/luxfheprotocol/hardhat-template/generate) button at the top of the
 page to create a new repository with this repo as the initial state.
 
 ## Features
@@ -155,15 +155,15 @@ $ pnpm deploy:contracts"
 Deploy a new instance of the Counter contract via a task:
 
 ```sh
-$ pnpm task:deployCounter --network localfhenix
+$ pnpm task:deployCounter --network localluxfhe
 ```
 
 #### Add count
 
-Run the `addCount` task on the LocalFhenix network:
+Run the `addCount` task on the Localluxfhe network:
 
 ```sh
-$ pnpm task:addCount --network localfhenix --amount 12 --account 3
+$ pnpm task:addCount --network localluxfhe --amount 12 --account 3
 ```
 
 ## Tips
@@ -182,22 +182,22 @@ on/off.
 
 ## Local development with Ganache
 
-### Install LocalFhenix
+### Install Localluxfhe
 
-LocalFhenix is available through a docker image. To pull it, run:
+Localluxfhe is available through a docker image. To pull it, run:
 
 ```sh
-$ docker pull ghcr.io/fhenixprotocol/fhenix-devnet:0.1.5
+$ docker pull ghcr.io/luxfheprotocol/luxfhe-devnet:0.1.5
 ```
 
 ### Run a Development Blockchain
 
 ```sh
 $ docker run -it -p 8545:8545 -p 6000:6000 \
-  --name localfhenix ghcr.io/fhenixprotocol/fhenix-devnet:0.1.5
+  --name localluxfhe ghcr.io/luxfheprotocol/luxfhe-devnet:0.1.5
 ```
 
-Make sure to set the mnemonic in your `.env` file to that of the instance running with LocalFhenix.
+Make sure to set the mnemonic in your `.env` file to that of the instance running with Localluxfhe.
 
 ## License
 

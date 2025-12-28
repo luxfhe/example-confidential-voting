@@ -1,5 +1,5 @@
 import { Signer } from "ethers";
-import { generatePermit } from "fhenixjs";
+import { generatePermit } from "luxfhejs";
 import { task } from "hardhat/config";
 import type { TaskArguments } from "hardhat/types";
 
@@ -18,7 +18,7 @@ task("task:getVote")
 
     const { instance } = await createFheInstance(Voting.address, hre);
 
-    // This relies on: https://github.com/FhenixProtocol/fhenix.js/pull/16. This will not be merged but hopefully the functionality will be added in a different way.
+    // This relies on: https://github.com/LuxFHEProtocol/luxfhe.js/pull/16. This will not be merged but hopefully the functionality will be added in a different way.
     const permit = await generatePermit(Voting.address, ethers.provider, signers[taskArguments.account] as Signer);
     instance.storePermit(permit);
 
