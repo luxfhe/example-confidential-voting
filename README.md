@@ -1,9 +1,9 @@
 # Hardhat Template [![Open in Gitpod][gitpod-badge]][gitpod] [![Github Actions][gha-badge]][gha] [![Hardhat][hardhat-badge]][hardhat] [![License: MIT][license-badge]][license]
 
-[gitpod]: https://gitpod.io/#https://github.com/luxfheprotocol/hardhat-template
+[gitpod]: https://gitpod.io/#https://github.com/luxfhe/hardhat-template
 [gitpod-badge]: https://img.shields.io/badge/Gitpod-Open%20in%20Gitpod-FFB45B?logo=gitpod
-[gha]: https://github.com/luxfheprotocol/hardhat-template/actions
-[gha-badge]: https://github.com/luxfheprotocol/hardhat-template/actions/workflows/ci.yml/badge.svg
+[gha]: https://github.com/luxfhe/hardhat-template/actions
+[gha-badge]: https://github.com/luxfhe/hardhat-template/actions/workflows/ci.yml/badge.svg
 [hardhat]: https://hardhat.org/
 [hardhat-badge]: https://img.shields.io/badge/Built%20with-Hardhat-FFDB1C.svg
 [license]: https://opensource.org/licenses/MIT
@@ -20,7 +20,7 @@ A Hardhat-based template for developing Solidity smart contracts, with sensible 
 
 ## Getting Started
 
-Click the [`Use this template`](https://github.com/luxfheprotocol/hardhat-template/generate) button at the top of the
+Click the [`Use this template`](https://github.com/luxfhe/hardhat-template/generate) button at the top of the
 page to create a new repository with this repo as the initial state.
 
 ## Features
@@ -187,14 +187,14 @@ on/off.
 Localluxfhe is available through a docker image. To pull it, run:
 
 ```sh
-$ docker pull ghcr.io/luxfheprotocol/luxfhe-devnet:0.1.5
+$ docker pull ghcr.io/luxfhe/luxfhe-devnet:0.1.5
 ```
 
 ### Run a Development Blockchain
 
 ```sh
 $ docker run -it -p 8545:8545 -p 6000:6000 \
-  --name localluxfhe ghcr.io/luxfheprotocol/luxfhe-devnet:0.1.5
+  --name localluxfhe ghcr.io/luxfhe/luxfhe-devnet:0.1.5
 ```
 
 Make sure to set the mnemonic in your `.env` file to that of the instance running with Localluxfhe.

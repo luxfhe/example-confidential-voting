@@ -1,5 +1,5 @@
 import { Signer } from "ethers";
-import { generatePermit } from "luxfhejs";
+import { generatePermit } from "@luxfhe/sdk/node";
 import { task } from "hardhat/config";
 import type { TaskArguments } from "hardhat/types";
 

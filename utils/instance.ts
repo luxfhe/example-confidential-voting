@@ -1,4 +1,4 @@
-import { LuxFHEClient, Permit, getPermit } from "luxfhejs";
+import { LuxFHEClient, Permit, getPermit } from "@luxfhe/sdk/node";
 import { HardhatRuntimeEnvironment } from "hardhat/types/runtime";
 
 export interface FheContract {

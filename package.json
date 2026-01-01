@@ -7,7 +7,7 @@
     "url": "https://github.com/luxfheProtocol"
   },
   "devDependencies": {
-    "@luxfhe/contracts": "^0.5.0",
+    "@luxfi/contracts": "^1.4.0",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
     "@nomicfoundation/hardhat-ethers": "^3.0.0",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.6",
@@ -30,8 +30,7 @@
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "ethers": "^6.4.0",
-    "@luxfhe/v1-sdk": "^0.5.0",
-    "@luxfhe/contracts": "^0.5.0",
+    "@luxfhe/sdk": "^0.5.0",
     "fs-extra": "^10.1.0",
     "hardhat": "^2.12.2",
     "hardhat-deploy": "^0.11.29",
@@ -88,7 +87,7 @@
     "test": "hardhat test --network localluxfhe",
     "ci-test": "hardhat test --network ci_localluxfhe",
     "typechain": "cross-env TS_NODE_TRANSPILE_ONLY=true hardhat typechain",
-    "start:localluxfhe": "docker run -it -p 8545:8545 -p 6000:6000 -p 5000:5000 --rm --name localluxfhe ghcr.io/luxfheprotocol/luxfhe-devnet:0.1.6",
+    "start:localluxfhe": "docker run -it -p 8545:8545 -p 6000:6000 -p 5000:5000 --rm --name localluxfhe ghcr.io/luxfhe/luxfhe-devnet:0.1.6",
     "stop:localluxfhe": "docker stop localluxfhe && docker rm localluxfhe",
     "restart:localluxfhe": "stop:localluxfhe && start:localluxfhe",
     "faucet": "node getFromFaucet.js"
